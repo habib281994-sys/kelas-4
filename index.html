@@ -1,67 +1,191 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Soal Kelas 4</title>
+
+<title>PTS TIK Kelas 4</title>
 
 <style>
-body{
-    font-family:Arial,sans-serif;
-    background:#f4f6f8;
-    margin:0;
-    color:#222;
+*{
+    box-sizing:border-box;
 }
 
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef3f8;
+    color:#263238;
+    line-height:1.6;
+}
+
+/* HEADER */
+.header{
+    background:linear-gradient(135deg,#1565c0,#1976d2,#42a5f5);
+    color:white;
+    padding:35px 20px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.header h1{
+    margin:0;
+    font-size:28px;
+    letter-spacing:.5px;
+}
+
+.header h2{
+    margin:6px 0;
+    font-size:23px;
+    font-weight:500;
+}
+
+.header p{
+    margin:4px 0;
+    font-size:15px;
+}
+
+/* CONTAINER */
 .container{
     max-width:900px;
-    margin:25px auto;
+    margin:30px auto;
+    padding:0 18px 40px;
+}
+
+/* PETUNJUK */
+.petunjuk{
     background:white;
-    padding:28px;
+    padding:20px 22px;
     border-radius:14px;
-    box-shadow:0 3px 12px #0002;
+    margin-bottom:25px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    border-left:5px solid #1976d2;
 }
 
-h1{
-    text-align:center;
-    margin-bottom:22px;
+.petunjuk strong{
+    color:#1565c0;
 }
 
-.question,.uraian{
-    border:1px solid #ddd;
+/* JUDUL BAGIAN */
+.section-title{
+    background:#1976d2;
+    color:white;
+    padding:13px 18px;
     border-radius:10px;
-    padding:17px;
-    margin:14px 0;
+    margin:25px 0 15px;
+    font-size:19px;
 }
 
-h3{
-    margin-top:0;
-    font-size:17px;
+/* SOAL */
+.question,
+.uraian{
+    background:white;
+    border-radius:13px;
+    padding:20px;
+    margin:15px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,.07);
+    border:1px solid #e1e7ed;
 }
 
+.question h3,
+.uraian h3{
+    margin:0 0 12px;
+    font-size:16px;
+    color:#263238;
+}
+
+/* PILIHAN */
 label{
     display:block;
-    padding:9px;
-    border-radius:7px;
-    margin:4px 0;
+    background:#f7f9fb;
+    border:1px solid #e1e5e8;
+    padding:10px 13px;
+    margin:7px 0;
+    border-radius:8px;
+    transition:.2s;
 }
 
+label:hover{
+    background:#e3f2fd;
+    border-color:#90caf9;
+}
+
+/* CATATAN */
 .note{
-    margin-top:20px;
-    padding:15px;
-    background:#fff8e6;
+    background:#fff8e1;
+    border-left:5px solid #ffb300;
+    padding:17px 20px;
     border-radius:10px;
+    margin-top:25px;
+    color:#5d4b00;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    color:#78909c;
+    font-size:13px;
+    margin-top:25px;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .header{
+        padding:28px 15px;
+    }
+
+    .header h1{
+        font-size:22px;
+    }
+
+    .header h2{
+        font-size:19px;
+    }
+
+    .container{
+        padding:0 12px 30px;
+        margin-top:20px;
+    }
+
+    .question,
+    .uraian{
+        padding:16px;
+    }
+
+    .section-title{
+        font-size:17px;
+    }
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+<div class="header">
+    <h1>PENILAIAN TENGAH SEMESTER (PTS)</h1>
+    <h2>TIK KELAS 4</h2>
+    <p><b>SD NEGERI PABEAN 2</b></p>
+    <p>Tahun Pelajaran 2026/2027</p>
+</div>
+
 <div class="container">
 
-<h1>SOAL KELAS 4</h1>
+<!-- PETUNJUK -->
+<div class="petunjuk">
+    <strong>Petunjuk Pengerjaan</strong>
+    <p>
+        Bacalah setiap soal dengan teliti. Untuk soal pilihan ganda,
+        pilihlah satu jawaban yang paling tepat. Untuk soal uraian/isian,
+        tuliskan jawaban pada lembar jawaban.
+    </p>
+</div>
 
-<h2>A. Pilihan Ganda</h2>
+<!-- PILIHAN GANDA -->
+<div class="section-title">
+    A. Pilihan Ganda
+</div>
 
 <div class="question">
 <h3>1. Microsoft Word digunakan untuk …</h3>
@@ -223,7 +347,10 @@ label{
 <label>D. Mengulang pekerjaan</label>
 </div>
 
-<h2>B. Uraian / Isian</h2>
+<!-- URAIAN -->
+<div class="section-title">
+    B. Uraian / Isian
+</div>
 
 <div class="uraian">
 <h3>1. Internet adalah jaringan komputer yang menghubungkan komputer di seluruh …</h3>
@@ -265,8 +392,13 @@ label{
 <h3>10. Internet dapat membantu siswa untuk …</h3>
 </div>
 
+<!-- CATATAN -->
 <div class="note">
-<b>Catatan:</b> Setelah selesai, lembar jawaban langsung dikumpulkan ke guru. Web ini tidak menghitung atau menampilkan nilai.
+    <b>Catatan:</b> Setelah selesai, periksa kembali jawaban sebelum dikumpulkan.
+</div>
+
+<div class="footer">
+    Penilaian Tengah Semester • TIK Kelas 4 • SD Negeri Pabean 2
 </div>
 
 </div>
