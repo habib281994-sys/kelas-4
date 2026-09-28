@@ -1,0 +1,408 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PTS TIK Kelas 4</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef3f8;
+    color:#263238;
+    line-height:1.6;
+}
+
+/* HEADER */
+.header{
+    background:linear-gradient(135deg,#1565c0,#1976d2,#42a5f5);
+    color:white;
+    padding:35px 20px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.header h1{
+    margin:0;
+    font-size:28px;
+    letter-spacing:.5px;
+}
+
+.header h2{
+    margin:6px 0;
+    font-size:23px;
+    font-weight:500;
+}
+
+.header p{
+    margin:4px 0;
+    font-size:15px;
+}
+
+/* CONTAINER */
+.container{
+    max-width:900px;
+    margin:30px auto;
+    padding:0 18px 40px;
+}
+
+/* PETUNJUK */
+.petunjuk{
+    background:white;
+    padding:20px 22px;
+    border-radius:14px;
+    margin-bottom:25px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    border-left:5px solid #1976d2;
+}
+
+.petunjuk strong{
+    color:#1565c0;
+}
+
+/* JUDUL BAGIAN */
+.section-title{
+    background:#1976d2;
+    color:white;
+    padding:13px 18px;
+    border-radius:10px;
+    margin:25px 0 15px;
+    font-size:19px;
+}
+
+/* SOAL */
+.question,
+.uraian{
+    background:white;
+    border-radius:13px;
+    padding:20px;
+    margin:15px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,.07);
+    border:1px solid #e1e7ed;
+}
+
+.question h3,
+.uraian h3{
+    margin:0 0 12px;
+    font-size:16px;
+    color:#263238;
+}
+
+/* PILIHAN */
+label{
+    display:block;
+    background:#f7f9fb;
+    border:1px solid #e1e5e8;
+    padding:10px 13px;
+    margin:7px 0;
+    border-radius:8px;
+    transition:.2s;
+}
+
+label:hover{
+    background:#e3f2fd;
+    border-color:#90caf9;
+}
+
+/* CATATAN */
+.note{
+    background:#fff8e1;
+    border-left:5px solid #ffb300;
+    padding:17px 20px;
+    border-radius:10px;
+    margin-top:25px;
+    color:#5d4b00;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    color:#78909c;
+    font-size:13px;
+    margin-top:25px;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .header{
+        padding:28px 15px;
+    }
+
+    .header h1{
+        font-size:22px;
+    }
+
+    .header h2{
+        font-size:19px;
+    }
+
+    .container{
+        padding:0 12px 30px;
+        margin-top:20px;
+    }
+
+    .question,
+    .uraian{
+        padding:16px;
+    }
+
+    .section-title{
+        font-size:17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>PENILAIAN TENGAH SEMESTER (PTS)</h1>
+    <h2>TIK KELAS 4</h2>
+    <p><b>SD NEGERI PABEAN 2</b></p>
+    <p>Tahun Pelajaran 2026/2027</p>
+</div>
+
+<div class="container">
+
+<!-- PETUNJUK -->
+<div class="petunjuk">
+    <strong>Petunjuk Pengerjaan</strong>
+    <p>
+        Bacalah setiap soal dengan teliti. Untuk soal pilihan ganda,
+        pilihlah satu jawaban yang paling tepat. Untuk soal uraian/isian,
+        tuliskan jawaban pada lembar jawaban.
+    </p>
+</div>
+
+<!-- PILIHAN GANDA -->
+<div class="section-title">
+    A. Pilihan Ganda
+</div>
+
+<div class="question">
+<h3>1. Microsoft Word digunakan untuk …</h3>
+<label>A. Menggambar</label>
+<label>B. Mengetik dan mengolah teks</label>
+<label>C. Bermain game</label>
+<label>D. Menonton video</label>
+</div>
+
+<div class="question">
+<h3>2. Microsoft Word termasuk jenis perangkat …</h3>
+<label>A. Hardware</label>
+<label>B. Brainware</label>
+<label>C. Software</label>
+<label>D. Monitor</label>
+</div>
+
+<div class="question">
+<h3>3. File hasil ketikan di Microsoft Word disebut …</h3>
+<label>A. Folder</label>
+<label>B. Dokumen</label>
+<label>C. Gambar</label>
+<label>D. Video</label>
+</div>
+
+<div class="question">
+<h3>4. Tombol Ctrl + S digunakan untuk …</h3>
+<label>A. Membuka dokumen</label>
+<label>B. Menyimpan dokumen</label>
+<label>C. Menutup program</label>
+<label>D. Menghapus teks</label>
+</div>
+
+<div class="question">
+<h3>5. Area tempat kita mengetik disebut …</h3>
+<label>A. Ribbon</label>
+<label>B. Document Area</label>
+<label>C. Title Bar</label>
+<label>D. Status Bar</label>
+</div>
+
+<div class="question">
+<h3>6. Menu utama pada Microsoft Word berada di bagian …</h3>
+<label>A. Taskbar</label>
+<label>B. Ribbon Menu</label>
+<label>C. Toolbar</label>
+<label>D. Desktop</label>
+</div>
+
+<div class="question">
+<h3>7. Tombol Ctrl + N berfungsi untuk …</h3>
+<label>A. Menyimpan dokumen</label>
+<label>B. Membuka dokumen lama</label>
+<label>C. Membuat dokumen baru</label>
+<label>D. Menyalin teks</label>
+</div>
+
+<div class="question">
+<h3>8. Simbol huruf B di toolbar berfungsi untuk …</h3>
+<label>A. Huruf miring</label>
+<label>B. Huruf tebal</label>
+<label>C. Garis bawah</label>
+<label>D. Warna huruf</label>
+</div>
+
+<div class="question">
+<h3>9. Untuk mencetak dokumen digunakan kombinasi tombol …</h3>
+<label>A. Ctrl + C</label>
+<label>B. Ctrl + V</label>
+<label>C. Ctrl + P</label>
+<label>D. Ctrl + Z</label>
+</div>
+
+<div class="question">
+<h3>10. Bagian komputer yang menampilkan hasil ketikan adalah …</h3>
+<label>A. Keyboard</label>
+<label>B. CPU</label>
+<label>C. Mouse</label>
+<label>D. Monitor</label>
+</div>
+
+<div class="question">
+<h3>11. File → Save As digunakan untuk …</h3>
+<label>A. Menyimpan dokumen baru</label>
+<label>B. Membuka dokumen lama</label>
+<label>C. Menutup dokumen</label>
+<label>D. Menghapus file</label>
+</div>
+
+<div class="question">
+<h3>12. Program Microsoft Word termasuk keluaran dari perusahaan …</h3>
+<label>A. Google</label>
+<label>B. Microsoft</label>
+<label>C. Intel</label>
+<label>D. Yahoo</label>
+</div>
+
+<div class="question">
+<h3>13. Perintah untuk menyalin teks adalah …</h3>
+<label>A. Ctrl + X</label>
+<label>B. Ctrl + V</label>
+<label>C. Ctrl + C</label>
+<label>D. Ctrl + P</label>
+</div>
+
+<div class="question">
+<h3>14. Perintah Undo digunakan untuk …</h3>
+<label>A. Mengulang perintah terakhir</label>
+<label>B. Membatalkan perintah terakhir</label>
+<label>C. Menyimpan dokumen</label>
+<label>D. Menutup program</label>
+</div>
+
+<div class="question">
+<h3>15. Garis bawah pada teks dapat dibuat dengan tombol …</h3>
+<label>A. Ctrl + B</label>
+<label>B. Ctrl + I</label>
+<label>C. Ctrl + U</label>
+<label>D. Ctrl + L</label>
+</div>
+
+<div class="question">
+<h3>16. Fungsi dari Status Bar adalah …</h3>
+<label>A. Menunjukkan halaman dan jumlah kata</label>
+<label>B. Menampilkan judul dokumen</label>
+<label>C. Menyimpan file</label>
+<label>D. Mengatur ukuran font</label>
+</div>
+
+<div class="question">
+<h3>17. Untuk memperbesar ukuran huruf, kita gunakan menu …</h3>
+<label>A. Font Size</label>
+<label>B. Paragraph</label>
+<label>C. Page Layout</label>
+<label>D. Insert</label>
+</div>
+
+<div class="question">
+<h3>18. Hasil kerja di Microsoft Word bisa dicetak menggunakan alat …</h3>
+<label>A. Scanner</label>
+<label>B. Monitor</label>
+<label>C. Printer</label>
+<label>D. Flashdisk</label>
+</div>
+
+<div class="question">
+<h3>19. Tombol Ctrl + O digunakan untuk …</h3>
+<label>A. Membuka dokumen lama</label>
+<label>B. Menyimpan file</label>
+<label>C. Membuat dokumen baru</label>
+<label>D. Menutup aplikasi</label>
+</div>
+
+<div class="question">
+<h3>20. Perintah Redo berfungsi untuk …</h3>
+<label>A. Menghapus teks</label>
+<label>B. Membatalkan Undo</label>
+<label>C. Menyimpan dokumen</label>
+<label>D. Mengulang pekerjaan</label>
+</div>
+
+<!-- URAIAN -->
+<div class="section-title">
+    B. Uraian / Isian
+</div>
+
+<div class="uraian">
+<h3>1. Internet adalah jaringan komputer yang menghubungkan komputer di seluruh …</h3>
+</div>
+
+<div class="uraian">
+<h3>2. Untuk membuka halaman web, kita memerlukan program bernama …</h3>
+</div>
+
+<div class="uraian">
+<h3>3. Contoh mesin pencari adalah …</h3>
+</div>
+
+<div class="uraian">
+<h3>4. Media sosial digunakan untuk berkomunikasi dengan …</h3>
+</div>
+
+<div class="uraian">
+<h3>5. Alamat situs web disebut juga …</h3>
+</div>
+
+<div class="uraian">
+<h3>6. Agar aman di internet, jangan pernah membagikan …</h3>
+</div>
+
+<div class="uraian">
+<h3>7. Contoh layanan email gratis adalah …</h3>
+</div>
+
+<div class="uraian">
+<h3>8. “.edu” pada alamat web menunjukkan situs milik …</h3>
+</div>
+
+<div class="uraian">
+<h3>9. Etika menggunakan internet disebut juga …</h3>
+</div>
+
+<div class="uraian">
+<h3>10. Internet dapat membantu siswa untuk …</h3>
+</div>
+
+<!-- CATATAN -->
+<div class="note">
+    <b>Catatan:</b> Setelah selesai, periksa kembali jawaban sebelum dikumpulkan.
+</div>
+
+<div class="footer">
+    Penilaian Tengah Semester • TIK Kelas 4 • SD Negeri Pabean 2
+</div>
+
+</div>
+
+</body>
+</html>
+```
